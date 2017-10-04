@@ -1,0 +1,46 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\Besitzer\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
+    "restore": {
+      "projectUniqueName": "E:\\Schule\\5. Klasse\\C#\\Linq-Quiz\\LinqQuiz.Library\\LinqQuiz.Library.csproj",
+      "projectName": "LinqQuiz.Library",
+      "projectPath": "E:\\Schule\\5. Klasse\\C#\\Linq-Quiz\\LinqQuiz.Library\\LinqQuiz.Library.csproj",
+      "packagesPath": "C:\\Users\\Besitzer\\.nuget\\packages\\",
+      "outputPath": "E:\\Schule\\5. Klasse\\C#\\Linq-Quiz\\LinqQuiz.Library\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Besitzer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.0": {}
+    }
+  }
+}

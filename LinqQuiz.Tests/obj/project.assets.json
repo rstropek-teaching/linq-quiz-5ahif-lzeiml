@@ -1,0 +1,69 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "LinqQuiz.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/LinqQuiz.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LinqQuiz.Library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LinqQuiz.Library/1.0.0": {
+      "type": "project",
+      "path": "../LinqQuiz.Library/LinqQuiz.Library.csproj",
+      "msbuildProject": "../LinqQuiz.Library/LinqQuiz.Library.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.0": [
+      "LinqQuiz.Library >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Besitzer\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
+    "restore": {
+      "projectUniqueName": "E:\\Schule\\5. Klasse\\C#\\Linq-Quiz\\LinqQuiz.Tests\\LinqQuiz.Tests.csproj",
+      "projectName": "LinqQuiz.Tests",
+      "projectPath": "E:\\Schule\\5. Klasse\\C#\\Linq-Quiz\\LinqQuiz.Tests\\LinqQuiz.Tests.csproj",
+      "packagesPath": "C:\\Users\\Besitzer\\.nuget\\packages\\",
+      "outputPath": "E:\\Schule\\5. Klasse\\C#\\Linq-Quiz\\LinqQuiz.Tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Besitzer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "projectReferences": {
+            "E:\\Schule\\5. Klasse\\C#\\Linq-Quiz\\LinqQuiz.Library\\LinqQuiz.Library.csproj": {
+              "projectPath": "E:\\Schule\\5. Klasse\\C#\\Linq-Quiz\\LinqQuiz.Library\\LinqQuiz.Library.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.0": {}
+    }
+  }
+}
