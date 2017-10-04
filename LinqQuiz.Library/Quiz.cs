@@ -91,7 +91,20 @@ namespace LinqQuiz.Library
         /// </remarks>
         public static (char letter, int numberOfOccurrences)[] GetLetterStatistic(string text)
         {
-            throw new NotImplementedException();
+            char[] textArr = text.ToUpper().ToCharArray();
+            (char letter, int numberOfOccurences)[] arr = new(char letter, int numberOfOccurences)[26];
+
+            char currChar = 'A';
+            for (int i = 0; i < arr.Length; i++)
+            {
+                var chars = textArr.Where(c => c.Equals(currChar));
+                arr[i] = (currChar, chars.Count());
+                currChar++;
+            }
+
+            var ret = arr.Where(e => e.numberOfOccurences != 0);
+
+            return ret.ToArray();
         }
     }
 }
