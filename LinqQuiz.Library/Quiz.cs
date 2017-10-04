@@ -43,7 +43,18 @@ namespace LinqQuiz.Library
         /// </remarks>
         public static int[] GetSquares(int exclusiveUpperLimit)
         {
-            throw new NotImplementedException();
+            // Why do you have to return an empty array if exclusiveUpperLimit == 7?
+            if (exclusiveUpperLimit < 1)
+                return new int[0];
+
+            List<int> numbers = new List<int>();
+
+            for (int i = exclusiveUpperLimit; i > 0; i--)
+                numbers.Add(checked (i*i));
+
+            var retList = numbers.Where(n => n % 7 == 0);
+
+            return retList.ToArray();
         }
 
         /// <summary>
