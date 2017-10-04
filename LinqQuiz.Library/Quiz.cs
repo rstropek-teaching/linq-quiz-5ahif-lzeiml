@@ -49,7 +49,7 @@ namespace LinqQuiz.Library
 
             List<int> numbers = new List<int>();
 
-            for (int i = exclusiveUpperLimit; i > 0; i--)
+            for (int i = exclusiveUpperLimit - 1; i > 0; i--)
                 numbers.Add(checked (i*i));
 
             var retList = numbers.Where(n => n % 7 == 0);
@@ -73,7 +73,28 @@ namespace LinqQuiz.Library
         /// </remarks>
         public static FamilySummary[] GetFamilyStatistic(IReadOnlyCollection<IFamily> families)
         {
-            throw new NotImplementedException();
+            if (families == null)
+                throw new ArgumentNullException();
+
+            List<FamilySummary> summaries = new List<FamilySummary>();
+
+            foreach (var current in families)
+            {
+                FamilySummary newSummary = new FamilySummary();
+                newSummary.FamilyID = current.ID;
+                newSummary.NumberOfFamilyMembers = current.Persons.Count;
+
+                Decimal sum = 0;
+                foreach (var person in current.Persons)
+                    sum = sum + person.Age;
+                sum = sum / current.Persons.Count;
+
+                newSummary.AverageAge = sum;
+
+                summaries.Add(newSummary);
+            }
+
+            return summaries.ToArray();
         }
 
         /// <summary>
