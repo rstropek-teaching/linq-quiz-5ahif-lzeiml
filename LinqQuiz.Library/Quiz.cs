@@ -86,6 +86,7 @@ namespace LinqQuiz.Library
                 Decimal sum = 0;
                 foreach (var person in current.Persons)
                     sum = sum + person.Age;
+                // The following statement is a problem if number of persons is zero.
                 sum = sum / current.Persons.Count;
 
                 newSummary.AverageAge = sum;
